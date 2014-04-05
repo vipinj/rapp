@@ -1,0 +1,8 @@
+class Compute
+
+  attr_accessor :id
+  
+  validates :id => true
+  
+  def initialize():
+      

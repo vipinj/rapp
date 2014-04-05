@@ -1,0 +1,5 @@
+class ComputeController < ApplicationController
+  def compute
+    @compute = Compute
+  end
+end
