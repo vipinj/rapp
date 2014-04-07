@@ -21,6 +21,8 @@
   <10rps is enough for saturating an AWS micro-ami compute capacity.
 
 * Routes
+
   get 'compute/:id' => 'compute#compute'
+
   url: http://IP:port/compute/1  
 
