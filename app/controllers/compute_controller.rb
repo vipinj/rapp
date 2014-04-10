@@ -1,6 +1,6 @@
 class ComputeController < ApplicationController
   def compute
-    @compute = Compute.new
+    @compute = Compute.new(params)
     render :nothing => true
   end
 end

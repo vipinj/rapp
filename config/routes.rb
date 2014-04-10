@@ -1,6 +1,6 @@
 DApp::Application.routes.draw do
-  get "input_output/io"
-  get "memory/memory"
+  get "input_output/:id" => 'input_output#input_output'
+  get "memory/:id" => 'memory#memory'
   get 'compute/:id' => 'compute#compute'
 
   # The priority is based upon order of creation: first created -> highest priority.
