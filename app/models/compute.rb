@@ -1,5 +1,5 @@
 require 'matrix'
-require 'facter'
+#require 'facter'
 
 class Compute
 
@@ -9,7 +9,7 @@ class Compute
     @id = params[:id]
     
     arr = id.to_s.split('x')
-    puts "SizeError" unless arr.size == 2
+    #puts "SizeError" unless arr.size == 2
 
     if arr[0].to_i > 100 
         arr[0] = 100
@@ -18,8 +18,8 @@ class Compute
       arr[1] = 100
     end
 
-    proc = Facter.value(:processorcount)
-    puts arr[0].to_i
+    #proc = Facter.value(:processorcount)
+    #puts arr[0].to_i
     m1 = Matrix.identity(arr[0].to_i) 
     m2 = Matrix.identity(arr[1].to_i)
     m3 = m1 * m2

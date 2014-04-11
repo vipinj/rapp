@@ -9,7 +9,7 @@ class Memory
 
     mem_free = Facter.value(:memoryfree_mb).to_i
     id_val = @id.to_s.to_f.to_int
-    puts id_val, mem_free
+    #puts id_val, mem_free
     if id_val < mem_free
       arr_size = id_val
     else
