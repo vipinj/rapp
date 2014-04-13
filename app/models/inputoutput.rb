@@ -19,7 +19,7 @@ class Inputoutput
       t_name = "tmp/" + i.to_s
       name = Rails.root.join(t_name)
       temp = File.new(name.to_s, "w+")
-      temp.truncate(10000000) # create 1M files
+      temp.truncate(1000000) # create 1M files
       temp.close
       farr[i] = name
     end

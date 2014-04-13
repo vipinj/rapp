@@ -6,7 +6,7 @@ class Compute
   attr_accessor :id # id in the form axb where a x b is the Matrix size
   
   def initialize(params)
-    @id = params[:id]
+    id = params[:id]
     
     arr = id.to_s.split('x')
     #puts "SizeError" unless arr.size == 2
