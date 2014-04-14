@@ -14,15 +14,9 @@
   curl-dev(el)
 
 * Configuration
+  Please see bootme.sh
 
 * Deployment instructions
-
-  Expand matrix sizes for manipulating intensity.
+  Requires port 80 to be open  on the aws security configuration.
   <10rps is enough for saturating an AWS micro-ami compute capacity.
-
-* Routes
-
-  get 'compute/:id' => 'compute#compute'
-
-  url: http://IP:port/compute/1  
 
