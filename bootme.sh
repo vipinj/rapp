@@ -6,6 +6,7 @@ sudo echo "gem: --no-rdoc --no-ri" > ~/.gemrc
 sudo \curl -sSL https://get.rvm.io | bash -s stable --rails 
 
 source ~/.profile
+echo "export NEWRELIC_ACCOUNT_KEY="
 source ~/.rvm/scripts/rvm
 
 sudo yum -y install rubygems
