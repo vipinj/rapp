@@ -21,6 +21,8 @@ gem install bundle thin bundler
 git clone https://github.com/vipinj/rapp.git
 
 cd rapp
+#untested, packer should be able to export the VAR
+sed -i 's/license_key:/license_key: $PACKER_NEWRELIC_KEY/g' config/newrelic.yml
 yum -y install htop 
 gem install rake eventmachine execjs therubyracer
 #echo $PATH
